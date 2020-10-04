@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <titile>hello</titile>
-  </head>
-  <body>
-    Hello,world!
-    <hr></hr>
-    <p>
-      Try, New line
-    </p>
-  </body>
+<html>
 
+    <head>
+	<meta charset="utf-8">
+	<title> Welcom to Tsunoppy </title>
+	<style>
+	</style>
+	<link rel="stylesheet" href="home.css">
+	<script src="home.js"></script>
+    </head>
+
+    <body>
+
+	<div class="container">
+	    <a href="#" onclick="home()" >Home</a>
+	    <div class="dropdown">
+		<button class="dropbtn" onclick="myFunction()">Projects</button>
+		<div class="dropdown-content" id="myDropdown">
+		    <a href="#" onclick="general()">General</a>
+		    <a href="#" onclick="rc()">RC ACI</a>
+		    <a href="#" onclick="steel()">STEEL AISC</a>
+		    <a href="#" onclick="found()">Founation, Pile</a>
+		    <a href="#" onclick="masonry()">Others</a>
+		    <a href="#" onclick="euroCode()">Euro Code/Vietnam</a>
+		</div>
+	    </div>
+	    <a href="#news" onclick="aboutUs()">About Me</a>
+	    <a href="#" onclick="Ref()">Tips</a>
+	</div>
+
+	<div class="mainFont" id="home"></div>
+	<!--
+	<h3>Simple Calculation Getter</h3>
+	<p>Click on the "Dropdown" link to see the dropdown menu.</p>
+	-->
+
+    </body>
 </html>
