@@ -33,7 +33,7 @@ function home(){
     result += "<hr>";
 
     result += "<p>";
-    result += "Under Construction";
+    result += "This is the test ^v^!";
     result += "</p>";
     result += "<hr>";
 
