@@ -7,18 +7,14 @@ function homeback(){
     var result = "";
 
 
-    result += "<h1> Welcome to Tsunoppy</h1>";
+    result += "<h1> Welcome to SimpGet</h1>";
 
     ////////////////////////////////////////////////////////////////////////
     result += "<p>";
-    result += " I'm Tsunoda from the structural engineer working in Tokyo, Japan.";
-    result += " I love developing softwares related to the civil engineering.";
-    result += "</p><p>";
-
     result += " This is the web site which introduce these applications for getting simple calculation result.";
     result += " It's designed by assuming the person who has enough design ability to understand each formula meaning and to use on basic design stage, or for double check with own calculation.";
     result += "</p><p>";
-    result += " Let's the design begin with reduce your work time. ^v^!";
+    result += " Let's the design begin with reducing your work time. ^v^!";
     result += "</p>";
     ////////////////////////////////////////////////////////////////////////
 
@@ -39,20 +35,31 @@ function homeback(){
 
 function aboutUs(){
     var result = "";
-    result += "<p>"
-    result += "My Licence: Strucral Design 1st Class Architect(Jp)";
+    result += "<p>";
+    result += " My name is Tsunoda as the structural engineer working in Tokyo, Japan .";
+    result += " I love developing softwares related to the civil engineering.";
     result += "</p>";
     result += "<p>";
-    result += " This is the site for civil engingeers all over the world.";
     result += " These apprications were coded by Tsunoda for private use";
     result += " You can use it for free.";
     result += "</p><p>";
     result += "Contact would be much appreciated, if any.";
     result += "</p><p>";
+    result += "<p>";
+    result += " For civil engingeers all over the world.";
+    result += "</p>";
+
+    result += "<hr>";
+
     result += '<a  href="mailto:t.tsunodat04@gmail.com" target="_top">';
     result += "Email:t.tsunodat04@gmail.com;";
     result += "</a>";
     result += "</p>";
+
+    result += "<p>";
+    result += "Licence: Structural Design 1st Class Architect(Jp)";
+    result += "</p>";
+
     document.getElementById('home').innerHTML = result;
 }
 
@@ -1079,7 +1086,7 @@ function rc(){
 function Ref() {
     var result = "";
     result += '<h1>';
-    result += 'Reinforcement Setting';
+    result += 'Download GUI software';
     result += '</h1>';
 
     result += "<hr>";
@@ -1090,169 +1097,11 @@ function Ref() {
     result += "<tr>";
 
     result += "<td>";
-    result += 'Size Designation &nbsp;';
+    result += 'MnGen// &nbsp';
     result += "</td><td>";
-    result += 'Nominal Diameter &nbsp;';
+    result += 'M-N interaction curve generator';
     result += "</td><td>";
-    result += 'Nominal Cross Sectional Area &nbsp;';
     result += "</td><td>";
-    result += 'Nominal Mass';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += '';
-    result += "</td><td>";
-    result += 'mm';
-    result += "</td><td>";
-    result += 'mm<sup>2</sup>';
-    result += "</td><td>";
-    result += 'kg/m';
-    result += "</td>";
-
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB10';
-    result += "</td><td>";
-    result += '10';
-    result += "</td><td>";
-    result += '78.54';
-    result += "</td><td>";
-    result += '0.616';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB12';
-    result += "</td><td>";
-    result += '12';
-    result += "</td><td>";
-    result += '113.10';
-    result += "</td><td>";
-    result += '0.888';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB16';
-    result += "</td><td>";
-    result += '16';
-    result += "</td><td>";
-    result += '201.06';
-    result += "</td><td>";
-    result += '1.578';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB20';
-    result += "</td><td>";
-    result += '20';
-    result += "</td><td>";
-    result += '314.01';
-    result += "</td><td>";
-    result += '2.466';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB22';
-    result += "</td><td>";
-    result += '22';
-    result += "</td><td>";
-    result += '380.13';
-    result += "</td><td>";
-    result += '2.984';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB25';
-    result += "</td><td>";
-    result += '25';
-    result += "</td><td>";
-    result += '490.87';
-    result += "</td><td>";
-    result += '3.853';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB28';
-    result += "</td><td>";
-    result += '28';
-    result += "</td><td>";
-    result += '615.75';
-    result += "</td><td>";
-    result += '4.834';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB32';
-    result += "</td><td>";
-    result += '10';
-    result += "</td><td>";
-    result += '804.25';
-    result += "</td><td>";
-    result += '6.313';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB36';
-    result += "</td><td>";
-    result += '36';
-    result += "</td><td>";
-    result += '1017.88';
-    result += "</td><td>";
-    result += '7.990';
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'DB40';
-    result += "</td><td>";
-    result += '40';
-    result += "</td><td>";
-    result += '1256.64';
-    result += "</td><td>";
-    result += '9.865';
     result += "</td>";
 
     result += "</tr>";
@@ -1355,3 +1204,57 @@ window.onclick = function(e) {
 	}
     }
 }
+
+
+function Projects(){
+
+    var result = "";
+    result += "<h1> Projects </h2>";
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
+    result += "<h2> M-N Generator </h2>";
+
+    result += "<p>";
+    result += " MnGen makes M-N interaction curve for the RC column based on ACI.";
+    result += "</p>";
+
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
+    result += "<h2> SimpGet </h2>";
+
+    result += "<p>";
+    result += " SimpGet can get the result of the simple calculation for the verification of the design.";
+    result += "</p>";
+    result += "<p>";
+    result += " Now, only Thailand material would be available. Pls, check the online demo.";
+    result += " GUI application also can be downloaded. Saving data function would be added";
+    result += "</p>";
+    result += "<p>";
+    result += " For other countries, under construction...";
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
+    result += "<h2> MoveLoad </h2>";
+
+    result += "<p>";
+    result += " MoveLoad calculates the maximamu stress on the single beam due to the moving load, such as crane girder";
+    result += "</p>";
+    result += "<hr>";
+    ////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////////////////////
+    result += "<h2> SoilSettle</h2>";
+
+    result += "<p>";
+    result += " You can get the immediate soil settlmenet and consolidation settlement";
+    result += "</p>";
+    result += "<hr>";
+    ////////////////////////////////////////////////////////////////////////
+
+
+    document.getElementById('home').innerHTML = result;
+
+}
+
