@@ -1,34 +1,31 @@
 window.onload = function (){
-    home();
+    homeback();
 }
 
-function home(){
+function homeback(){
 
     var result = "";
 
 
     result += "<h1> Welcome to Tsunoppy</h1>";
 
-
     ////////////////////////////////////////////////////////////////////////
     result += "<p>";
-    result += "I'm Tsunoda from the structural engineer in Tokyo, Japan.";
-    result += "</p><p>";
-    result += "I love develop aprication for the civil engineering";
+    result += " I'm Tsunoda from the structural engineer working in Tokyo, Japan.";
+    result += " I love developing softwares related to the civil engineering.";
     result += "</p><p>";
 
-    result += "This is the web site which introduce these applications for getting simple calculation result";
-    result += "</p><p>";
+    result += " This is the web site which introduce these applications for getting simple calculation result.";
     result += " It's designed by assuming the person who has enough design ability to understand each formula meaning and to use on basic design stage, or for double check with own calculation.";
     result += "</p><p>";
-    result += " Let's the design begin.";
-
+    result += " Let's the design begin with reduce your work time. ^v^!";
+    result += "</p>";
     ////////////////////////////////////////////////////////////////////////
 
     result += "<hr>";
 
     result += "<h2>Log</h2>";
-    result += "</p><p>";
+    result += "<p>";
     result += "Upload: 2020/10/04";
     result += "<hr>";
 
@@ -42,9 +39,13 @@ function home(){
 
 function aboutUs(){
     var result = "";
+    result += "<p>"
+    result += "My Licence: Strucral Design 1st Class Architect(Jp)";
+    result += "</p>";
     result += "<p>";
-    result += " This is the site for civil engingeers all over the world";
-    result += " The apprication would be introduced. which was coded by Tsunoda for private use";
+    result += " This is the site for civil engingeers all over the world.";
+    result += " These apprications were coded by Tsunoda for private use";
+    result += " You can use it for free.";
     result += "</p><p>";
     result += "Contact would be much appreciated, if any.";
     result += "</p><p>";
