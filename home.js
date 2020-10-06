@@ -11,10 +11,10 @@ function homeback(){
 
     ////////////////////////////////////////////////////////////////////////
     result += "<p>";
-    result += " This is the web site which introduce these applications for getting simple calculation result.";
+    result += " This is the web site which introduce the structural engineering software for getting simple calculation result.";
     result += " It's designed by assuming the person who has enough design ability to understand each formula meaning and to use on basic design stage, or for double check with own calculation.";
     result += "</p><p>";
-    result += " Let's the design begin with reducing your work time. ^v^!";
+    result += " Let's the design begin. ^v^!";
     result += "</p>";
     ////////////////////////////////////////////////////////////////////////
 
@@ -35,8 +35,13 @@ function homeback(){
 
 function aboutUs(){
     var result = "";
+    result += "<h1>";
+    result += "About me";
+    result += "</h1>";
+    result += "<hr>";
+
     result += "<p>";
-    result += " My name is Tsunoda as the structural engineer working in Tokyo, Japan .";
+    result += " My name is Tsunoda working in Tokyo, Japan as the structural engineer  .";
     result += " I love developing softwares related to the civil engineering.";
     result += "</p>";
     result += "<p>";
@@ -51,8 +56,15 @@ function aboutUs(){
 
     result += "<hr>";
 
-    result += '<a  href="mailto:t.tsunodat04@gmail.com" target="_top">';
-    result += "Email:t.tsunodat04@gmail.com;";
+    result += "<p>";
+    result += '<a class="linkFont" href="https://github.com/tsunoppy/" target="_blank">';
+    result += "Github: https://github.com/tsunoppy/;";
+    result += "</a>";
+    result += "</p>";
+
+    result += "<p>";
+    result += '<a  href="mailto:tsunodat04@gmail.com" target="_top">';
+    result += "Email: tsunodat04@gmail.com;";
     result += "</a>";
     result += "</p>";
 
@@ -1099,7 +1111,7 @@ function Ref() {
     result += "<td>";
     result += 'MnGen// &nbsp';
     result += "</td><td>";
-    result += 'M-N interaction curve generator';
+    result += 'M-N interaction diagram generator';
     result += "</td><td>";
     result += "</td><td>";
     result += "</td>";
@@ -1213,16 +1225,8 @@ function Projects(){
     result += "<hr>";
 
     ////////////////////////////////////////////////////////////////////////
-    result += "<h2> M-N Generator </h2>";
-
-    result += "<p>";
-    result += " MnGen makes M-N interaction curve for the RC column based on ACI.";
-    result += "</p>";
-
-    result += "<hr>";
-
-    ////////////////////////////////////////////////////////////////////////
     result += "<h2> SimpGet </h2>";
+
 
     result += "<p>";
     result += " SimpGet can get the result of the simple calculation for the verification of the design.";
@@ -1232,15 +1236,51 @@ function Projects(){
     result += " GUI application also can be downloaded. Saving data function would be added";
     result += "</p>";
     result += "<p>";
+
     result += " For other countries, under construction...";
+    result += "</p>";
+
+    result += "<img src=\"image/simpGet.png\" width=\"50%\">";
+
+    result += "<p>";
+    result += "Version 1.0: 2017/09, ";
+    result += "Coded by Javascript + CSS + HTML on nwjs";
+    result += "</p>";
+
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
+    result += "<h2> MnGen </h2>";
+
+    result += "<p>";
+    result += " MnGen makes M-N interaction diagram for the RC column based on ACI.";
+    result += "</p>";
+
+
+    result += "<img src=\"image/MnGen_ScreenShot.png\" width=\"50%\">";
+
+    result += "<p>";
+    result += "Version 1.0: 2018/09, ";
+    result += "Coded by Javascript + CSS + HTML on nwjs";
+    result += "</p>";
+
     result += "<hr>";
 
     ////////////////////////////////////////////////////////////////////////
     result += "<h2> MoveLoad </h2>";
 
+
     result += "<p>";
     result += " MoveLoad calculates the maximamu stress on the single beam due to the moving load, such as crane girder";
     result += "</p>";
+
+    result += "<img src=\"image/MoveLoad.png\" width=\"50%\">";
+
+    result += "<p>";
+    result += "Version 1.0: 2018/09, ";
+    result += "Coded by Javascript + CSS + HTML on nwjs";
+    result += "</p>";
+
     result += "<hr>";
     ////////////////////////////////////////////////////////////////////////
 
@@ -1250,6 +1290,11 @@ function Projects(){
     result += "<p>";
     result += " You can get the immediate soil settlmenet and consolidation settlement";
     result += "</p>";
+
+    result += "<p>";
+    result += "Under Construction.";
+    result += "</p>";
+
     result += "<hr>";
     ////////////////////////////////////////////////////////////////////////
 
