@@ -2,6 +2,9 @@ body{
     background-color: #333333;
 }
 
+a {
+    color: snow;
+}
 .mainFont {
     color: snow;
 }
