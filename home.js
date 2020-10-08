@@ -42,16 +42,18 @@ function aboutUs(){
 
     result += "<p>";
     result += " My name is Tsunoda working in Tokyo, Japan as the structural engineer  .";
+    result += "</p>";
+    result += "<p>";
     result += " I love developing softwares related to the civil engineering.";
     result += "</p>";
     result += "<p>";
-    result += " These apprications were coded by Tsunoda for private use";
-    result += " You can use it for free.";
+    result += " Softwares in this site were coded for my private use.";
+    result += " So, you can use it for free.";
     result += "</p><p>";
     result += "Contact would be much appreciated, if any.";
     result += "</p><p>";
     result += "<p>";
-    result += " For civil engingeers all over the world.";
+    result += " For civil engingeers all over the world!!";
     result += "</p>";
 
     result += "<hr>";
