@@ -561,26 +561,8 @@ function steel(){
     result += "<h1> Steel </h1>";
     result += "<hr>";
 
-        result += "<table>";
     //////////////////////////////////////////////////
 
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="steel/HMem/Hmem.html" target="_blank">';
-    result += 'Hmem';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Section properties getter for the H-shpe section";
-    result += "</td>";
-
-    result += "</tr></table>";
-    result += "<hr>";
-
-    //////////////////////////////////////////////////
     result += "<h2> Purlin</h2>";
 
     result += "<table>";
@@ -682,30 +664,6 @@ function steel(){
     result += "</tr>";
 
     //////////////////////////////////////////////////
-
-    result += "</tr></table>";
-
-    result += "<hr>";
-
-    ////////////////////////////////////////////////////////////////////////
-
-    result += "<h2> Crane Girder </h2>";
-
-    result += "<table>";
-    //////////////////////////////////////////////////
-
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="steel/MoveSt/move.html" target="_blank">';
-    result += 'MoveSt';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Analysis of the crane girder due to moving load";
-    result += "</td>";
 
     result += "</tr></table>";
 
