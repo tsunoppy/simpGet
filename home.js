@@ -571,7 +571,7 @@ function steel(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="steel/purlin/pulin.html" target="_blank">';
+    result += '<a class="linkFont" href="demo/steel/purlin/pulin.html" target="_blank">';
     result += 'purlin';
     result += '</a><br  />';
 
@@ -585,7 +585,7 @@ function steel(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="steel/fly/purWB.html" target="_blank">';
+    result += '<a class="linkFont" href="demo/steel/fly/purWB.html" target="_blank">';
     result += 'purWB';
     result += '</a><br  />';
 
@@ -609,7 +609,7 @@ function steel(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="steel/pipeLatt/steelTruss.html" target="_blank">';
+    result += '<a class="linkFont" href="demo/steel/pipeLatt/steelTruss.html" target="_blank">';
     result += 'pipeLattice';
     result += '</a><br  />';
 
@@ -651,13 +651,13 @@ function steel(){
     result += "<td></td>";
     result += "<td></td>";
     result += "<td>";
-    result += '<a href="steel/pipeConnection/TYconnect.html" target="_blank">';
+    result += '<a href="demo/steel/pipeConnection/TYconnect.html" target="_blank">';
     result += '<button>T,Y type</button>';
     result += '</a> &nbsp;';
-    result += '<a href="steel/pipeConnection/Cconnect.html" target="_blank">';
+    result += '<a href="demo/steel/pipeConnection/Cconnect.html" target="_blank">';
     result += '<button>Cross type</button>';
     result += '</a> &nbsp;';
-    result += '<a href="steel/pipeConnection/Kconnect.html" target="_blank">';
+    result += '<a href="demo/steel/pipeConnection/Kconnect.html" target="_blank">';
     result += '<button>K type</button>';
     result += '</a>';
     result += "</td>";
