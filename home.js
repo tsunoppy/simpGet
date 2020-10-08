@@ -21,12 +21,14 @@ function homeback(){
     result += "<hr>";
 
     result += "<h2>Log</h2>";
+
     result += "<p>";
-    result += "Upload: 2020/10/04";
+    result += "Upload: 2020/10/08, Added Demo.";
+    result += "</p>";
     result += "<hr>";
 
     result += "<p>";
-    result += "This is the test ^v^!";
+    result += "Upload: 2020/10/04, Test";
     result += "</p>";
     result += "<hr>";
 
