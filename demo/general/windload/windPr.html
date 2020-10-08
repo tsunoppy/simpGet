@@ -1,0 +1,235 @@
+<!Doctype html>
+<html lang="ja">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>WindLowRize</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="wind.css">
+    <script src="wind.js"></script>
+    <script src="../../menu.js"></script>
+  </head>
+
+  <body>
+
+    <div class="boxA">
+
+      <div class="box1" id = "a-box">
+
+	<h1>
+	  <u>Wind Pressure Based on MWFRS Low-Rise Buildings by ASCE-10 </u>
+	</h1>
+
+	<p>
+	  <h4>- Title;
+	    &nbsp;&nbsp;
+	    <input type="text" style="width:650px" id="job">
+	  </h4>
+	</p>
+
+      </div >
+
+    </div>
+
+
+    <div class="boxA">
+
+      <p><h4> - Input</h4></p>
+
+      <!--
+      <div class="box2">
+	<p><img src="images/Document1.jpg" alt="Stress Location" width="300px" /><br  /></p>
+
+      </div>
+      -->
+
+      <div class="box2" id="b-box">
+	<!--
+	    <input type="button" id="btn" value="EXE">/><br />
+	    -->
+	<table>
+	  <tbody>
+	    <tr>
+	      <td>
+		Basic Wind Speed, V:
+	      </td>
+	      <td>
+		<input type="text" id="vv">
+		&nbsp;m/s
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+		Directionality Factor, K<sub>d</sub>:
+	      </td>
+	      <td>
+		<input type="text" id="kd" >
+		&nbsp;-
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+		Exposure Categories:
+	      </td>
+	      <td>
+		<select id="expCat" onCharge="OnPrimeDia()">
+		  <option value="B">B</option>
+		  <option value="C">C</option>
+		  <option value="D">D</option>
+		</select>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+		Topographic Effects, K<sub>zt</sub>:
+	      </td>
+	      <td>
+	      <input type="text" id="kzt">
+	      &nbsp;-
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td>
+		Internal Pressure Coef., G<sub>cpi</sub>:
+	      </td>
+	      <td>
+		<form name="gcpiForm">
+		  <select name="gcpi" onCharge="OnPrimeDia()">
+		    <option value="0.00" >Open Buildings</option>
+		    <option value="0.55">Partially Enclosed Buildings</option>
+		    <option value="0.18" selected>Enclosed Buildings</option>
+		  </select>
+		</form>
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td>
+		Gust Factor, G:
+	      </td>
+	      <td>
+		<input type="text" id="gg">
+		&nbsp;-
+	      </td>
+	    </tr>
+
+	  </tbody>
+	</table>
+
+      </div>
+
+      <div class="box3" id="b-box">
+	<table>
+	  <tbody>
+
+	    <tr>
+	      <td>
+		Building height to eave, h<sub>e</sub>:
+	      </td>
+	      <td>
+		<input type="text" id="he" >
+		&nbsp;m
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td>
+		Building height to ridge, h<sub>r</sub>:
+	      </td>
+	      <td>
+		<input type="text" id="hr" >
+		&nbsp;m
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td>
+		Building Length, L:
+	      </td>
+	      <td>
+		<input type="text" id="ll">
+		&nbsp;m
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td>
+		Building Width, B:
+	      </td>
+	      <td>
+		<input type="text" id="bb" >
+		&nbsp;m
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td>
+		Slope:
+	      </td>
+	      <td>
+		<input type="text" id="theta"o>
+		&nbsp;deg.
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td></td>
+	      <td></td>
+	      <td>
+		<input type="button" value="Exe" onclick="OnButtonClick();">
+	      </td>
+	    </tr>
+
+
+	  </tbody>
+	</table>
+
+      </div>
+    </div>
+
+
+    <div class="boxA">
+      <div class="box5">
+	<p>
+	  <h4> - General </h4>
+	</p>
+	<p id="result0"></p>
+      </div>
+    </div>
+
+    <div class="boxA">
+      <div class="box5">
+	<p>
+	  <h4> - Load Case A </h4>
+	</p>
+	<p><img src="images/LoadCaseA.jpg" width="700px" /><br  /></p>
+	<!--
+	    <input type="button" value="EXE" onclick="OnButtonClick();">
+	    -->
+	<p id="result1"></p>
+      </div>
+    </div>
+
+
+    <div class="boxA">
+      <div class="box5">
+	<p>
+	  <h4> - Load Case B </h4>
+	</p>
+	<p><img src="images/LoadCaseB.jpg" width="700px" /><br  /></p>
+	<p id="result2"></p>
+      </div>
+    </div>
+
+
+    <div class="boxA">
+	<div id="Insert" class="box5">
+	</div>
+    </div>
+
+  </body>
+
+</html>

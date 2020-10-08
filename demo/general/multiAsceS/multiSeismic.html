@@ -1,0 +1,375 @@
+<!Doctype html>
+<html lang="ja">
+
+    <head>
+
+	<meta charset="utf-8">
+	<title>MultiAsceSeLoad</title>
+	<style>
+	</style>
+	<link rel="stylesheet" href="multiSeismic.css">
+	<script src="multiSeismic.js"></script>
+	<script src="../../menu.js"></script>
+    </head>
+
+    <body>
+
+	<div class="boxA">
+	    <div class="box1" id = "a-box">
+
+
+		<h1> <u> Seismic Load Based on ASCE CODE </u></h1>
+
+
+		<p Align="right">
+
+		    Coded BY 05/2016
+
+		    <input type="button" value="EXE" onclick="OnButtonClick();">
+		</p>
+
+		<p>
+		    <h4>- Title;
+			&nbsp;&nbsp;
+			<input type="text" style="width:630px" id="job">
+		    </h4>
+		</p>
+
+
+		<form name="inputform" >
+
+		    <p><h4> - Seismic Important Factor, I<sub>e</sub></h4></p>
+
+		    <table>
+			<tbody>
+
+			    <tr>
+				<td>
+				    Occupancy Category;
+				</td>
+				<td>
+				    <select id="category" onChange="OnButtonClick(this.form);">
+					<option value="I">I</option>
+					<option value="II">II</option>
+					<option value="III">III</option>
+					<option value="IV">IV</option>
+				    </select>
+				    &nbsp;&nbsp;
+				</td>
+				<td>
+				    I<sub>e</sub> =
+				    &nbsp;
+				</td>
+				<td>
+				    <input type="text" id="ii" value="1.00" onChange="OnButtonClick(this.form);">
+				</td>
+				<td>
+				    &nbsp;&nbsp;
+				</td>
+				<td id="AddImpo" >
+				</td>
+			    </tr>
+
+			</tbody>
+		    </table>
+
+		    <p><h4> - Seismic Acc.,
+			S<sub>s</sub>, S<sub>1,</sub>
+		    </h4></p>
+
+		    <table>
+			<tbody>
+
+			    <tr>
+				<td>
+				    S<sub>s</sub>;&nbsp;
+				</td>
+				<td>
+				    <input type="text" id="ss" >
+				</td>
+				<td> m/s<sup>2</sup> &nbsp;
+				</td>
+				<td>
+				    S<sub>1</sub>;&nbsp
+				</td>
+				<td>
+				    <input type="text" id="s1">
+				</td>
+				<td> m/s<sup>2</sup> &nbsp;
+				</td>
+				<td>
+				    &nbsp&nbsp
+				</td>
+				<td id="addzoneFactor" >
+				</td>
+			    </tr>
+
+			</tbody>
+		    </table>
+
+		    <p><h4> - Site Coefficient,
+			F<sub>a</sub>, F<sub>v</sub></h4></p>
+
+		    <table>
+			<tbody>
+
+			    <tr>
+				<td>
+				    Soil Classification Type;&nbsp
+				</td>
+				<td>
+				    <select id="soilPro" onChange="OnButtonClick(this.form);">
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="E">E</option>
+					<option value="F">F (No Use)</option>
+				    </select>
+				</td>
+				<td id="addCoef" >
+				</td>
+			    </tr>
+			</tbody>
+		    </table>
+
+		    <p><h4> - Elastic fundamental period of vibration, T;
+		    </h4></p>
+
+		    <table>
+			<tbody>
+			    <tr>
+				<td>
+				    Building Height, h<sub>n</sub>;
+				    &nbsp
+				</td>
+				<td>
+				    <input type="text" id="hn" >
+				    &nbsp
+				    m,
+				</td>
+				<td>
+				</td>
+				<td id="AddImpo" >
+				</td>
+
+				<td>
+				    &nbsp&nbsp
+				    &nbsp&nbsp
+				    Structure System;&nbsp
+				</td>
+				<td>
+				    <select id="ct" onChange="OnButtonClick(this.form);">
+					<option value="0.0724" selected>Steel Moment-Resisting Frames</option>
+					<option value="0.0466">Concrete Moment-Resisting Frames</option>
+					<option value="0.0731">Eccentrically Braced Frames</option>
+					<option value="0.0731">Steel Buckling-restrained Braced Frames</option>
+					<option value="0.0488">All other Buildings</option>
+					<option value="Direct">Direct Input (No Use)</option>
+				    </select>
+				</td>
+				<td>
+				    &nbsp&nbsp
+				</td>
+			    </tr>
+			</tbody>
+		    </table>
+
+		    <p id="addPeriod" ></p>
+
+
+		    <p><h4>
+			- Modification Factor, R;
+		    </h4></p>
+
+		    <table>
+			<tbody>
+			    <tr>
+				<td>
+				    R =;
+				    &nbsp
+				</td>
+				<td>
+				    <input type="text" id="rr"  onChange="OnButtonClick(this.form);">
+				</td>
+				<td>
+				    &nbsp&nbsp
+				</td>
+				<td id="AddModF" >
+				</td>
+			    </tr>
+
+
+			</tbody>
+		    </table>
+
+		    <p><h4>
+			- Vertical Distribution;
+		    </h4></p>
+
+		    <table>
+			<tbody>
+			    <tr>
+				<td>
+				    Layer=
+				</td>
+				<td>
+				    <input type="text" id="LayerNum" >
+				    (Max. 50 Layers)
+				    &nbsp;
+				    <input type="button" value="Add" onclick="addStory();">
+				    <input type="button" value="Remove" onclick="removeLoad();">
+				</td>
+			    </tr>
+			</tbody>
+		    </table>
+
+		    <table class="www">
+			<tbody>
+			    <tr>
+				<td>
+				    Story
+				</td>
+				<td>
+				    hi
+				</td>
+				<td>
+				    wi
+				</td>
+				<td>
+				    &Sigma; hi
+				</td>
+				<td>
+				    &Sigma; wi
+				</td>
+				<td>
+				    C<sub>vx</sub>
+				</td>
+				<td>
+				    F
+				</td>
+				<td>
+				    V
+				</td>
+				<td>
+				    OTM
+				</td>
+				<td>
+				    V/&Sigma;W
+				</td>
+			    </tr>
+			    <tr>
+				<td>
+				</td>
+				<td>
+				    m
+				</td>
+				<td>
+				    kN
+				</td>
+				<td>
+				    m
+				</td>
+				<td>
+				    kN
+				</td>
+				<td>
+				    -
+				</td>
+				<td>
+				    kN
+				</td>
+				<td>
+				    kN
+				</td>
+				<td>
+				    kN.m
+				</td>
+				<td>
+				    -
+				</td>
+			    </tr>
+			    <tr id="1"></tr>
+			    <tr id="2"></tr>
+			    <tr id="3"></tr>
+			    <tr id="4"></tr>
+			    <tr id="5"></tr>
+			    <tr id="6"></tr>
+			    <tr id="7"></tr>
+			    <tr id="8"></tr>
+			    <tr id="9"></tr>
+			    <tr id="10"></tr>
+			    <tr id="11"></tr>
+			    <tr id="12"></tr>
+			    <tr id="13"></tr>
+			    <tr id="14"></tr>
+			    <tr id="15"></tr>
+			    <tr id="16"></tr>
+			    <tr id="17"></tr>
+			    <tr id="18"></tr>
+			    <tr id="19"></tr>
+			    <tr id="20"></tr>
+			    <tr id="21"></tr>
+			    <tr id="22"></tr>
+			    <tr id="23"></tr>
+			    <tr id="24"></tr>
+			    <tr id="25"></tr>
+			    <tr id="26"></tr>
+			    <tr id="27"></tr>
+			    <tr id="28"></tr>
+			    <tr id="29"></tr>
+			    <tr id="30"></tr>
+			    <tr id="31"></tr>
+			    <tr id="32"></tr>
+			    <tr id="33"></tr>
+			    <tr id="34"></tr>
+			    <tr id="35"></tr>
+			    <tr id="36"></tr>
+			    <tr id="37"></tr>
+			    <tr id="38"></tr>
+			    <tr id="39"></tr>
+			    <tr id="40"></tr>
+			    <tr id="41"></tr>
+			    <tr id="42"></tr>
+			    <tr id="43"></tr>
+			    <tr id="44"></tr>
+			    <tr id="45"></tr>
+			    <tr id="46"></tr>
+			    <tr id="47"></tr>
+			    <tr id="48"></tr>
+			    <tr id="49"></tr>
+			    <tr id="50"></tr>
+			</tbody>
+		    </table>
+
+		    <p id="vertical"></p>
+		    <!--
+			 </div>
+		       -->
+		</form>
+	    </div >
+
+	</div>
+
+		<div class="boxA">
+		    <div class="box4">
+			<!--
+			     <input type="button" value="EXE" onclick="OnButtonClick();">
+			   -->
+		    </div>
+		</div>
+
+
+		<div class="boxA">
+		    <div id="result" class="box5">
+		    </div>
+		</div>
+
+		<div class="boxA">
+		    <div id="Insert" class="box5">
+		    </div>
+		</div>
+
+    </body>
+
+</html>

@@ -1,0 +1,221 @@
+<!Doctype html>
+<html lang="ja">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>ubcSeismic</title>
+    <!--
+	 <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+       -->
+    <style>
+    </style>
+    <link rel="stylesheet" href="ubcSeismic.css">
+    <script src="ubcSeismic.js"></script>
+    <script src="../../menu.js"></script>
+  </head>
+
+  <body>
+
+      <div class="boxA">
+	  <div class="box1" id = "a-box">
+
+
+	      <h1> <u> Seismic Load Based on UBC CODE </u></h1>
+
+	      <p Align="right">
+
+		Coded, 03/2016
+
+		  <input type="button" value="EXE" onclick="OnButtonClick();">
+	      </p>
+
+	      <p>
+		  <h4>- Title;
+		      &nbsp;&nbsp;
+		      <input type="text" style="width:630px" id="job" >
+		  </h4>
+	      </p>
+
+
+	      <form name="inputform" >
+
+		  <p><h4> - Seismic Important Factor, I</h4></p>
+
+		  <table>
+		      <tbody>
+
+			  <tr>
+			      <td>
+				  I =
+				  &nbsp
+			      </td>
+			      <td>
+				  <input type="text" id="ii" onChange="OnButtonClick(this.form);">
+			      </td>
+			      <td>
+				  &nbsp&nbsp
+			      </td>
+			      <td id="AddImpo" >
+			      </td>
+			  </tr>
+
+		      </tbody>
+		  </table>
+
+		  <p><h4> - Seismic Zone Factor, Z</h4></p>
+
+		  <table>
+		      <tbody>
+
+			  <tr>
+			      <td>
+				  Seismic Zone;&nbsp
+			      </td>
+			      <td>
+				  <select id="zone" onChange="OnButtonClick(this.form);">
+				      <option value="0.075">Zone 1</option>
+				      <option value="0.15">Zone 2A</option>
+				      <option value="0.20">Zone 2B</option>
+				      <option value="0.30">Zone 3</option>
+				      <option value="0.40">Zone 4</option>
+				  </select>
+			      </td>
+			      <td>
+				  &nbsp&nbsp
+			      </td>
+			      <td id="addzoneFactor" >
+			      </td>
+			  </tr>
+
+		      </tbody>
+		  </table>
+
+		  <p><h4> - Seismic Coefficient,
+		      C<sub>a</sub>, C<sub>v</sub></h4></p>
+
+		  <table>
+		      <tbody>
+
+			  <tr>
+			      <td>
+				  Soil Profile Type;&nbsp
+			      </td>
+			      <td>
+				  <select id="soilPro" onChange="OnButtonClick(this.form);">
+				      <option value="Sa">S<sub>A</sub></option>
+				      <option value="Sb">S<sub>B</sub></option>
+				      <option value="Sc">S<sub>C</sub></option>
+				      <option value="Sd">S<sub>D</sub></option>
+				      <option value="Se">S<sub>E</sub></option>
+				      <option value="Sf">S<sub>F</sub> No Use</option>
+				  </select>
+			      </td>
+			      <td id="addCoef" >
+			      </td>
+			  </tr>
+		      </tbody>
+		  </table>
+
+		  <p><h4> - Elastic fundamental period of vibration, T;
+		  </h4></p>
+
+		  <table>
+		      <tbody>
+			  <tr>
+			      <td>
+				  Building Height, h<sub>n</sub>;
+				  &nbsp
+			      </td>
+			      <td>
+				  <input type="text" id="hn" >
+				  &nbsp
+				  m,
+			      </td>
+			      <td>
+			      </td>
+			      <td id="AddImpo" >
+			      </td>
+
+			      <td>
+				  &nbsp&nbsp
+				  &nbsp&nbsp
+				  Structure System;&nbsp
+			      </td>
+			      <td>
+				  <select id="ct" onChange="OnButtonClick(this.form);">
+				      <option value="0.0853">Steel Moment-Resisting Frames</option>
+				      <option value="0.0731">RC Moment-Resisting Frames</option>
+				      <option value="0.0731">Eccentrically Braced Frames</option>
+				      <option value="0.0488">All other Buildings</option>
+				      <option value="Direct">Direct Input (No Use)</option>
+				  </select>
+			      </td>
+			      <td>
+				  &nbsp&nbsp
+			      </td>
+			  </tr>
+		      </tbody>
+		  </table>
+
+		  <p id="addPeriod" ></p>
+
+
+		  <p><h4>
+		      - Numerical Coefficient, R;
+		  </h4></p>
+
+		  <table>
+		      <tbody>
+			  <tr>
+			      <td>
+				  R =;
+				  &nbsp
+			      </td>
+			      <td>
+				  <input type="text" id="rr" onChange="OnButtonClick(this.form);">
+			      </td>
+			      <td>
+				  &nbsp&nbsp
+			      </td>
+			      <td id="AddModF" >
+			      </td>
+			  </tr>
+
+
+		      </tbody>
+		  </table>
+
+
+
+		  <!--
+		       </div>
+		     -->
+	  </div >
+
+      </div>
+
+      </form>
+
+      <div class="boxA">
+	  <div class="box4">
+	      <!--
+		   <input type="button" value="EXE" onclick="OnButtonClick();">
+		 -->
+	  </div>
+      </div>
+
+
+      <div class="boxA">
+	  <div id="result" class="box5">
+	  </div>
+      </div>
+
+      <div class="boxA">
+	  <div id="Insert" class="box5">
+	  </div>
+      </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,202 @@
+<!Doctype html>
+<html lang="ja">
+
+    <head>
+
+	<meta charset="utf-8">
+	<title>distFac</title>
+	<style>
+	</style>
+	<link rel="stylesheet" href="css/distFac.css">
+	<script src="myscript.js"></script>
+	<script src="../../menu.js"></script>
+    </head>
+
+    <body>
+
+	<div class="boxA">
+
+	    <div class="box1" id= "a-box">
+
+		<h1> <u>Frame Analysis </u></h1>
+		<p>
+		    <h4>- Title;
+			&nbsp;&nbsp;
+			<input type="text" style="width:580px" id="job" >
+		    </h4>
+		</p>
+	    </div >
+
+	</div>
+
+
+	<div class="boxA">
+
+	    <p><h4> - Input</h4></p>
+
+	    <div class="box4" id="picture">
+	    </div>
+	</div>
+
+	<!--
+	     <div class="box2">
+	     <p><img src="images/Document1.jpg" alt="Stress Location" width="300px" /><br  /></p>
+	     <script src="myscript.js"></script>
+	     </div>
+	   -->
+
+	<div class="boxA">
+
+	    <div class="box4" id="b-box">
+
+		<table>
+		    <tbody>
+
+			<tr>
+
+			    <td>
+				Span, L:
+			    </td>
+			    <td>
+				<input type="text" id="l" onChange="DrawSec();">
+				&nbsp;m, &nbsp;&nbsp;
+			    </td>
+
+			    <td>
+				Height, h:
+			    </td>
+			    <td>
+				<input type="text" id="h" onChange="DrawSec();">
+				&nbsp;mm, &nbsp;&nbsp;
+			    </td>
+
+			</tr>
+
+		    </tbody>
+		</table>
+
+		<table>
+		    <tbody>
+
+			<tr>
+			    <td>
+				Story:
+			    </td>
+			    <td>
+				<input type="text" id="nStory" onChange="DrawSec();"
+			    </td>
+			</tr>
+
+			<tr>
+			    <td>
+				Beam, gB, gD:
+			    </td>
+			    <td>
+				<input type="text" id="gb" onChange="DrawSec();">
+				mm &nbsp;x
+				<input type="text" id="gd" onChange="DrawSec();">
+				mm
+			    </td>
+			</tr>
+
+			<tr id="addBeam">
+			</tr>
+
+			<tr>
+			    <td>
+				Column, cB x cD:
+			    </td>
+
+			    <td>
+				<input type="text" id="cb" onChange="DrawSec();">
+				mm &nbsp;x
+				<input type="text" id="cd" onChange="DrawSec();">
+				mm &nbsp;
+			    </td>
+			    <td>
+				( cD: Direction in plane )
+			    </td>
+
+			</tr>
+
+			<table>
+			    <tbody>
+
+				<tr>
+				    <td>
+					Concrete, fc:
+				    </td>
+				    <td>
+					<input type="text" id="fc" >
+					N/mm<sup>2</sup>
+				    </td>
+				</tr>
+
+			    </tbody>
+			</table>
+
+			<table>
+			    <tbody>
+
+				<tr>
+				    <td>
+					Section Property :
+				    </td>
+				    <td>
+					<input type="text" id="divCol" >
+					x I<sub>c</sub>,
+				    </td>
+				    <td>
+					&nbsp;
+				    </td>
+				    <td>
+					<input type="text" id="divBeam" >
+					x I<sub>g</sub>
+				    </td>
+				</tr>
+
+			    </tbody>
+			</table>
+
+			<table>
+			    <tbody>
+
+				<tr>
+				    <td>
+					Horizontal Force, P<sub>H</sub>:
+				    </td>
+				    <td>
+					<input type="text" id="ph" >
+					kN
+				    </td>
+				</tr>
+
+			    </tbody>
+			</table>
+
+		    </tbody>
+		</table>
+
+		<p style="text-align:right">
+		    <br>
+		    <input type="button" value="Draw" onclick="DrawSec(this.form);">
+		    <input type="button" value="EXE" onclick="OnButtonClick();">
+		</p>
+
+	    </div>
+	</div>
+
+	<div class="boxA">
+	    <div class="box5">
+		<p id="result"></p>
+	    </div>
+	</div>
+
+	<div class="boxA">
+	    <div id="Insert" class="box5">
+	    </div>
+	</div>
+
+    </body>
+
+</html>
