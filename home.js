@@ -203,7 +203,7 @@ function found(){
 
     var result = "";
 
-    result += "<h3> Foundation </h3>";
+    result += "<h1> Foundation </h1>";
     result += "<hr>";
 
     result += "<table>";
@@ -212,7 +212,7 @@ function found(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="foundation/direct/direct.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/foundation/direct/direct.html"  target="_blank">';
     result += 'direct';
     result += '</a><br  />';
 
@@ -229,7 +229,7 @@ function found(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="foundation/Retaining/retain.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/foundation/Retaining/retain.html"  target="_blank">';
     result += 'retain';
     result += '</a><br  />';
 
@@ -246,7 +246,7 @@ function found(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="soil/bearingCap/bearingCap.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/foundation/bearingCap/bearingCap.html"  target="_blank">';
     result += 'bearingCap';
     result += '</a><br  />';
 
@@ -260,28 +260,20 @@ function found(){
     result += "</tr>";
 
     //////////////////////////////////////////////////
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="app/slabOnGrade/SlabOnGrade.html"  target="_blank">';
-    result += 'slabOnGrade';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Conventional RC slab on glade by using stress obtained from Westergaard formula, refering PCA";
-    result += "<hr>";
-    result += "</td>";
-
-    result += "</tr>";
-
-
-    //////////////////////////////////////////////////
 
     result += "</table>";
 
-    result += "<h3> Pile </h3>";
+
+//    result += "<hr>";
+
+    document.getElementById('home').innerHTML = result;
+
+}
+
+function pile(){
+
+    var result = "";
+    result += "<h1> Pile </h1>";
     result += "<hr>";
 
     result += "<table>";
@@ -290,7 +282,7 @@ function found(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="pile/PileBearGen/pileBear.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/pile/PileBearGen/pileBear.html"  target="_blank">';
     result += 'PileBearGen';
     result += '</a><br  />';
 
@@ -307,7 +299,7 @@ function found(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="pile/PileBearThai/pileBear.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/pile/PileBearThai/pileBear.html"  target="_blank">';
     result += 'PileBearThai';
     result += '</a><br  />';
 
@@ -316,7 +308,7 @@ function found(){
     result += "<td>";
     result += "Evaluation of the pile bearing capacity by STS method in Thai.";
     result += '<br  />';;
-    result += '<a class="linkFont" href="pile/PileBearThai/note.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/pile/PileBearThai/note.html"  target="_blank">';
     result += 'Notation';
     result += '</a>';
     result += "<hr>";
@@ -329,7 +321,7 @@ function found(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="pile/pileSt/pileStress.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/pile/pileSt/pileStress.html"  target="_blank">';
     result += 'PileStress';
     result += '</a><br  />';
 
@@ -346,7 +338,7 @@ function found(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="pile/protrudingPile/protPile.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/pile/protrudingPile/protPile.html"  target="_blank">';
     result += 'ProtrudingPile';
     result += '</a><br  />';
 
@@ -359,93 +351,9 @@ function found(){
 
     result += "</tr>";
 
-    //////////////////////////////////////////////////
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="pile/rcPrePile/rcPrePile.html"  target="_blank">';
-    result += 'rcPrePile';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Structural capacity of the reinforced concrete precast pile based on ACI";
-    result += "<hr>";
-    result += "</td>";
-
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-
-    result += "</table>";
-
-    result += "<h3> Soil </h3>";
-    result += "<hr>";
-
-    result += "<table>";
-
-    //////////////////////////////////////////////////
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="soil/SoilCorelation/coR.html"  target="_blank">';
-    result += 'SoilCor_N';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Soil Parameter from SPT-N value. Cohesion, k30, Pile friction";
-    result += "<hr>";
-    result += "</td>";
-
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="soil/Conset/Conset.html"  target="_blank">';
-    result += 'ConSet';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Evaluation of the consolidation settlement. Each soil parameter can be estimated based on that ";
-    //result += '<br  />';
-    result += '<a class="linkFont" href="soil/ConsCheck/cons.html"  target="_blank">';
-    result += 'Reference';
-    result += '</a>';
-
-    result += "<hr>";
-    result += "</td>";
-
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="soil/ImSet/ImSet.html"  target="_blank">';
-    result += 'ImSet';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Immediate settlement computation";
-    result += "<hr>";
-    result += "</td>";
-
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-
-//    result += "<hr>";
 
     document.getElementById('home').innerHTML = result;
+
 
 }
 
@@ -936,7 +844,7 @@ function euroCode(){
     result += '<td>';
     result += "</td><td style=\"width:150px;\">";
 
-    result += '<a class="linkFont" href="pile/pileBearing/pileBear.html" target="_blank">';
+    result += '<a class="linkFont" href="demo/pile/pileBearing/pileBear.html" target="_blank">';
     result += 'PileBearing';
     result += '</a><br  />';
 
