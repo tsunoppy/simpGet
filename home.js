@@ -1054,14 +1054,17 @@ function Projects(){
     ////////////////////////////////////////////////////////////////////////
 
     ////////////////////////////////////////////////////////////////////////
-    result += "<h2> SoilSettle</h2>";
+    result += "<h2> SSet</h2>";
 
     result += "<p>";
     result += " You can get the immediate soil settlmenet and consolidation settlement";
     result += "</p>";
 
+
+    result += "<img src=\"image/SSet.png\" width=\"50%\">";
+
     result += "<p>";
-    result += "Under Construction.";
+    result += "<h3> Under Construction.... </h3>";
     result += "</p>";
 
     result += "<hr>";
