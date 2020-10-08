@@ -85,13 +85,11 @@ function general(){
 
     result += "<table>";
 
-
-
     //////////////////////////////////////////////////
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="general/ubcSeismic/ubcSeismic.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/general/ubcSeismic/ubcSeismic.html"  target="_blank">';
     result += 'ubcSeismic';
     result += '</a><br  />';
 
@@ -109,7 +107,7 @@ function general(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="general/asceS/asceSeismic.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/general/asceS/asceSeismic.html"  target="_blank">';
     result += 'asceSeismic';
     result += '</a><br  />';
 
@@ -127,7 +125,7 @@ function general(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="general/multiAsceS/multiSeismic.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/general/multiAsceS/multiSeismic.html"  target="_blank">';
     result += 'MultiAsceSeismic';
     result += '</a><br  />';
 
@@ -150,7 +148,7 @@ function general(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="general/windload/windPr.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/general/windload/windPr.html"  target="_blank">';
     result += 'windForce';
     result += '</a><br  />';
 
@@ -158,7 +156,7 @@ function general(){
 
     result += "<td>";
     result += "Wind Pressure based on MWFRS Low-Rise Buildings by ASCE-10";
-    result += '<a class="linkFont" href="general/windload/Ref/WindLoad.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/general/windload/Ref/WindLoad.html"  target="_blank">';
     result += '<br>';
     result += 'Reference';
     result += '</a><br  />';
@@ -168,53 +166,17 @@ function general(){
     result += "</tr>";
     //////////////////////////////////////////////////
 
-    /*
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="general/ubcSeismic/ubcSeismic.html"  target="_blank">';
-    result += 'siteClass';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Site Classification based on average N-Value (Under Construction)";
-    result += "<hr>";
-    result += "</td>";
-
-    result += "</tr>";
-
-     */
     result += "</tr></table>";
     result += "<hr>";
     result += "<h3> Analysis </h3>";
     result += "<table>";
 
     //////////////////////////////////////////////////
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="general/Stress/main.html"  target="_blank">';
-    result += 'getStress';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Getting stress on simple frame model. Cantilever Beam, Single Beam, Single Beam with Cantilever, Pin-Fixed Beam, Fixed Beam, Continuous Beam";
-    result += "<hr>";
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-
-    //////////////////////////////////////////////////
 
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="general/frame/frameOne.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/general/frame/frameOne.html"  target="_blank">';
     result += 'frameOne';
     result += '</a><br  />';
 
@@ -229,22 +191,6 @@ function general(){
 
     //////////////////////////////////////////////////
 
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-    result += '<a class="linkFont" href="general/ctProper/ctProp.html"  target="_blank">';
-    result += 'ctProp';
-    result += '</a><br  />';
-
-    result += "</td>";
-
-    result += "<td>";
-    result += "Section Property for the Cut T Reinforcment to H Beam";
-    result += "<hr>";
-    result += "</td>";
-
-    result += "</tr>";
-//////////////////////////////////////////////////
 
     result += "</table>";
     document.getElementById('home').innerHTML = result;
@@ -1098,32 +1044,11 @@ function rc(){
 function Ref() {
     var result = "";
     result += '<h1>';
-    result += 'Download GUI software';
+    result += 'Under Construction....';
     result += '</h1>';
 
     result += "<hr>";
 
-    result += "<table>";
-
-    //////////////////////////////////////////////////
-    result += "<tr>";
-
-    result += "<td>";
-    result += 'MnGen// &nbsp';
-    result += "</td><td>";
-    result += 'M-N interaction diagram generator';
-    result += "</td><td>";
-    result += "</td><td>";
-    result += "</td>";
-
-    result += "</tr>";
-    //////////////////////////////////////////////////
-
-
-    result += "</table>";
-
-    result += '<p>';
-    result += '</p>';
     document.getElementById('home').innerHTML = result;
 }
 
@@ -1242,6 +1167,31 @@ function Projects(){
 
     result += "<img src=\"image/simpGet.png\" width=\"50%\">";
 
+    result += "<br>";
+
+    //-- Download Btn --
+    result += "<tr><td>";
+
+    result += "</td><td>";
+    result += 'SimpGetRC: &nbsp;';
+    result += "</td><td>";
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Windows</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Mac</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Linux</button>';
+    result += '</a> &nbsp;';
+
+    result += "</td>";
+    result += "</tr>";
+    //-- Download Btn -- End
+
     result += "<p>";
     result += "Version 1.0: 2017/09, ";
     result += "Coded by Javascript + CSS + HTML on nwjs";
@@ -1256,8 +1206,40 @@ function Projects(){
     result += " MnGen makes M-N interaction diagram for the RC column based on ACI.";
     result += "</p>";
 
+    result += "<p>";
+    result += "<tr><td>";
+    result += 'Available Material: &nbsp;';
+    result += "</td><td>";
+    result += 'JIS/Japan&nbsp;';
+    result += "</td>";
+    result += "</tr>";
+    result += "</p>";
 
     result += "<img src=\"image/MnGen_ScreenShot.png\" width=\"50%\">";
+
+    result += "<br>";
+
+    //-- Download Btn --
+    result += "<tr><td>";
+    result += "</td><td>";
+    result += 'Download: &nbsp;';
+    result += "</td><td>";
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Windows</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Mac</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Linux</button>';
+    result += '</a> &nbsp;';
+
+    result += "</td>";
+    result += "</tr>";
+    //-- Download Btn -- End
 
     result += "<p>";
     result += "Version 1.0: 2018/09, ";
@@ -1275,6 +1257,29 @@ function Projects(){
     result += "</p>";
 
     result += "<img src=\"image/MoveLoad.png\" width=\"50%\">";
+    result += "<br>";
+
+    //-- Download Btn --
+    result += "<tr><td>";
+    result += "</td><td>";
+    result += 'Download: &nbsp;';
+    result += "</td><td>";
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Windows</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Mac</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Linux</button>';
+    result += '</a> &nbsp;';
+
+    result += "</td>";
+    result += "</tr>";
+    //-- Download Btn -- End
 
     result += "<p>";
     result += "Version 1.0: 2018/09, ";
@@ -1302,4 +1307,3 @@ function Projects(){
     document.getElementById('home').innerHTML = result;
 
 }
-
