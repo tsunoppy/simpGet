@@ -41,7 +41,7 @@ function aboutUs(){
     result += "<hr>";
 
     result += "<p>";
-    result += " My name is Tsunoda working in Tokyo, Japan as the structural engineer  .";
+    result += " My name is Tsunoda working in Tokyo, Japan as the structural engineer.";
     result += "</p>";
     result += "<p>";
     result += " I love developing softwares related to the civil engineering.";
@@ -730,35 +730,8 @@ function rc(){
     result += '<td>';
     result += "</td><td style=\"width:150px;\">";
 
-    //result += '<a class="linkFont" href="app/ColAna/ColAna.html" target="_blank">';
-    result += 'rcColumn';
-    //result += '</a><br  />';
 
-    result += "</td><td>";
-    result += "RC MN interaction curve based on SDM (Strength Design Method) and WSD (Working Stress Method) for Rect Shape & Circle Shape";
-
-    result += "</td></tr>";
-    result += "<tr><td>";
-
-    result += "</td><td>";
-    result += "</td><td>";
-    result += '<a href="app/ColRect/rect.html" target="_blank">';
-    result += '<button>RectCol</button>';
-    result += '</a> &nbsp;';
-    result += '<a href="app/ColCir/circle.html" target="_blank">';
-    result += '<button>CircleCol</button>';
-    result += '</a> &nbsp;';
-
-    result += "<hr>";
-    result += "</td>";
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-    result += "<tr valign=\"top\">";
-    result += '<td>';
-    result += "</td><td>";
-
-    result += '<a class="linkFont" href="app/slender/slender.html" target="_blank">';
+    result += '<a class="linkFont" href="demo/rc/slender/slender.html" target="_blank">';
     result += 'slenderCol';
     result += '</a><br  />';
 
@@ -773,7 +746,7 @@ function rc(){
     result += '<td>';
     result += "</td><td>";
 
-    result += '<a class="linkFont" href="app/corbel/corbel.html" target="_blank">';
+    result += '<a class="linkFont" href="demo/rc/corbel/corbel.html" target="_blank">';
     result += 'corbel';
     result += '</a><br  />';
 
@@ -790,27 +763,11 @@ function rc(){
     result += "<table>";
     ////////////////////////////////////////////////////////////////////////
 
-    //////////////////////////////////////////////////
     result += "<tr valign=\"top\">";
     result += '<td>';
     result += "</td><td style=\"width:150px;\">";
 
-    result += '<a class="linkFont" href="app/beam/rcBeam.html" target="_blank">';
-    result += 'rcBeam';
-    result += '</a><br  />';
-
-    result += "</td><td>";
-    result += "RC beam capacity based on SDM (Strength Design Method) and WSD (Working Stress Method.";
-    result += "<hr>";
-    result += "</td>";
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-    result += "<tr valign=\"top\">";
-    result += '<td>';
-    result += "</td><td style=\"width:150px;\">";
-
-    result += '<a class="linkFont" href="app/simpRC/simpBeam.html" target="_blank">';
+    result += '<a class="linkFont" href="demo/rc/simpRC/simpBeam.html" target="_blank">';
     result += 'SimpBeam';
     result += '</a><br  />';
 
@@ -825,7 +782,7 @@ function rc(){
     result += '<td>';
     result += "</td><td style=\"width:150px;\">";
 
-    result += '<a class="linkFont" href="app/simpRC/WSDsimpBeam.html" target="_blank">';
+    result += '<a class="linkFont" href="demo/rc/simpRC/WSDsimpBeam.html" target="_blank">';
     result += 'SimpBeamWSD';
     result += '</a><br  />';
 
@@ -841,28 +798,11 @@ function rc(){
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td>";
-    result += '<a class="linkFont" href="app/torsion/torsion.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/rc/torsion/torsion.html"  target="_blank">';
     result += 'TorsionBeam';
 
     result += "</td><td>";
     result += "Torsional moment strength based on ACI-08.";
-    result += "<hr>";
-
-    result += "</td>";
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-
-
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td>";
-
-    result += 'deepBeam';
-
-    result += "</td><td>";
-    result += "Under Construction - Shear Capacity for the deep beam.";
-//    result += "<hr>";
 
     result += "</td>";
     result += "</tr>";
@@ -879,7 +819,7 @@ function rc(){
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
 
-    result += '<a class="linkFont" href="app/DDM/ddm.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/rc/DDM/ddm.html"  target="_blank">';
     result += 'DDM';
     result += '</a><br  />';
 
@@ -895,7 +835,7 @@ function rc(){
     result += "<td>";
     result += "</td><td>";
 
-    result += '<a class="linkFont" href="app/EFM/efm.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/rc/EFM/efm.html"  target="_blank">';
     result += 'EFM';
     result += '</a><br  />';
 
@@ -912,82 +852,36 @@ function rc(){
     result += "<td>";
     result += "</td><td>";
 
-    result += '<a class="linkFont" href="others/SlabWithBeam/SlabWithBeam.html"  target="_blank">';
-    result += 'SlabWBeam';
-    result += '</a><br  />';
-
-    result += "</td><td>";
-    result += "Slab Desing based on Japanese Standard. (File Exposure is not available now)";
-    result += "<hr>";
-
-    result += "</td>";
-    result += "</tr>";
-
-    //////////////////////////////////////////////////
-
-    result += "<tr valign=\"top\">";
-    result += "<td>";
-    result += "</td><td>";
-
-    result += '<a class="linkFont" href="app/ptSlab/ptSlab.html"  target="_blank">';
+    result += '<a class="linkFont" href="demo/rc/ptSlab/ptSlab.html"  target="_blank">';
     result += 'ptSlab';
     result += '</a><br  />';
 
     result += "</td><td>";
     result += "Two way post tensioned slab by Equivalent Frame Method for the Flat Slab.";
-//    result += "<hr>";
+    result += "<hr>";
 
     result += "</td>";
     result += "</tr>";
 
-    ////////////////////////////////////////////////////////////////////////
-    result += "</tr></table>";
-    result += "<hr>";
-    result += "<h3> Wall</h3>";
-    result += "<table>";
-    ////////////////////////////////////////////////////////////////////////
 
     //////////////////////////////////////////////////
-
-
     result += "<tr valign=\"top\">";
     result += "<td>";
     result += "</td><td style=\"width:150px;\">";
-
-    result += '<a class="linkFont" href="app/shearWall/shearWall.html"  target="_blank">';
-    result += 'WallCap';
+    result += '<a class="linkFont" href="demo/rc/slabOnGrade/SlabOnGrade.html"  target="_blank">';
+    result += 'slabOnGrade';
     result += '</a><br  />';
 
-    result += "</td><td>";
-    result += "Capacity of the reinforcement concrete wall based on ACI-08.";
-
     result += "</td>";
-    result += "</tr>";
-    //////////////////////////////////////////////////
-
-    ////////////////////////////////////////////////////////////////////////
-    result += "</tr></table>";
-    result += "<hr>";
-    result += "<h3> Joint </h3>";
-    result += "<table>";
-    ////////////////////////////////////////////////////////////////////////
-
-    //////////////////////////////////////////////////
-
 
     result += "<td>";
-    result += "</td><td style=\"width:150px;\">";
-
-    result += '<a class="linkFont" href="app/rcJoint/rcJoint.html"  target="_blank">';
-    result += 'rcJoint';
-    result += '</a><br  />';
-
-    result += "</td><td>";
-    result += "Joint of Reinforced Concrete for the Special Moment Frame.";
-//    result += "<hr>";
-
+    result += "Conventional RC slab on glade by using stress obtained from Westergaard formula, refering PCA";
+    //result += "<hr>";
     result += "</td>";
+
     result += "</tr>";
+
+    ////////////////////////////////////////////////////////////////////////
 
     ////////////////////////////////////////////////////////////////////////
     result += "</tr></table>";
@@ -1011,7 +905,7 @@ function rc(){
 
     result += "</td><td>";
     result += "</td><td>";
-    result += '<a href="app/shearAnchor/shearAnchor.html" target="_blank">';
+    result += '<a href="demo/rc/shearAnchor/shearAnchor.html" target="_blank">';
     result += '<button>shearAnchor</button>';
     result += '</a> &nbsp;';
 
@@ -1027,7 +921,7 @@ function rc(){
 
     result += "</td><td>";
     result += "</td><td>";
-    result += '<a href="app/tensionAnchor/tenAnchor.html" target="_blank">';
+    result += '<a href="demo/rc/tensionAnchor/tenAnchor.html" target="_blank">';
     result += '<button>tensionAnchor</button>';
     result += '</a> &nbsp;';
 
