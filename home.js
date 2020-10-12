@@ -12,7 +12,7 @@ function homeback(){
     ////////////////////////////////////////////////////////////////////////
     result += "<p>";
     result += " This is the web site which introduce the structural engineering software for getting simple calculation result.";
-    result += " It's designed by assuming the person who has enough design ability to understand each formula meaning and to use on basic design stage, or double check with hand-cal result.";
+    result += " It's designed by assuming the person who has enough design ability to understand each formula meaning and to use on basic design stage for the double check with hand-cal result.";
     result += "</p><p>";
     result += " Let's the design begin. ^v^!";
     result += "</p>";
