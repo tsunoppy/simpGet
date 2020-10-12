@@ -308,7 +308,7 @@ function pile(){
     result += "</td>";
 
     result += "<td>";
-    result += "Evaluation of the pile bearing capacity by STS method in Thai.";
+    result += "Evaluation of the pile bearing capacity by Thai method.";
     result += '<br  />';;
     result += '<a class="linkFont" href="demo/pile/PileBearThai/note.html"  target="_blank">';
     result += 'Notation';
@@ -921,7 +921,7 @@ function Projects(){
     result += " SimpGet can get the result of the simple calculation for the verification of the design.";
     result += "</p>";
     result += "<p>";
-    result += " Now, only Thailand material would be available. Pls, check the online demo.";
+    result += " Pls, check the online demo.";
     result += " GUI application also can be downloaded. Saving data function would be added";
     result += "</p>";
     result += "<p>";
@@ -937,7 +937,7 @@ function Projects(){
     result += "<tr><td>";
 
     result += "</td><td>";
-    result += 'SimpGetRC: &nbsp;';
+    result += 'SimpGetRC, TIS(Thailand) Material: &nbsp;';
     result += "</td><td>";
     //result += '<a href="#" onclick=underCon() target="_blank">';
     result += '<a onclick=underCon() target="_blank">';
@@ -971,12 +971,33 @@ function Projects(){
     result += "</p>";
 
     result += "<p>";
-    result += "<tr><td>";
-    result += 'Available Material: &nbsp;';
-    result += "</td><td>";
+    result += "<h3>Feature</h3>";
+
+
+    result += "<ul>";
+
+    result += "<li>";
+    result += 'Material';
+    result += "</li>";
+
+    result += "<ul><li>";
     result += 'JIS/Japan&nbsp;';
-    result += "</td>";
-    result += "</tr>";
+    result += "</li><li>";
+    result += 'TIS/Thailand;';
+    result += "</li><li>";
+    result += 'GB/Chaina;';
+    result += "</li></ul>";
+
+    result += "</li><li>";
+    result += 'Based on ACI, SDM and WSDM is available';
+
+    result += "</li><li>";
+    result += 'Bi-Axial Strength can be evaluated, only SDM';
+
+
+    result += "</li>";
+    result += "</ul>";
+
     result += "</p>";
 
     result += "<img src=\"image/MnGen_ScreenShot.png\" width=\"50%\">";
