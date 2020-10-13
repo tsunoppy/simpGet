@@ -61,14 +61,16 @@ function aboutUs(){
     result += "<hr>";
 
     result += "<p>";
+    result += "Github: ";
     result += '<a class="linkFont" href="https://github.com/tsunoppy/" target="_blank">';
-    result += "Github: https://github.com/tsunoppy/;";
+    result += "https://github.com/tsunoppy/;";
     result += "</a>";
     result += "</p>";
 
     result += "<p>";
+    result += "Email:";
     result += '<a  href="mailto:tsunodat04@gmail.com" target="_top">';
-    result += "Email: tsunodat04@gmail.com;";
+    result += "tsunodat04@gmail.com;";
     result += "</a>";
     result += "</p>";
 
@@ -586,7 +588,7 @@ function steel(){
 
 function rc(){
     var result = "";
-    result += "<h1> RC Menu </h1>";
+    result += "<h1> RC </h1>";
     result += "<hr>";
 
     result += "<h3> Column </h3>";
@@ -973,7 +975,7 @@ function Projects(){
     result += '<button>Windows</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/simpThai/pack/simpthai" download="simpthai">';
     result += '<button>Mac</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
@@ -1106,20 +1108,12 @@ function Projects(){
     result += "<tr><td>";
 
     result += "</td><td>";
-    result += 'SimpGetRC, TIS(Thailand) Material: &nbsp;';
+    result += 'simpThai: &nbsp;';
     result += "</td><td>";
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
-    result += '<button>Windows</button>';
-    result += '</a> &nbsp;';
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
-    result += '<button>Mac</button>';
-    result += '</a> &nbsp;';
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
-    result += '<button>Linux</button>';
-    result += '</a> &nbsp;';
+
+    result += '<a class="linkFont" href="https://github.com/tsunoppy/simpThai" target="_blank">';
+    result += "Github";
+    result += "</a>";
 
     result += "</td>";
     result += "</tr>";
