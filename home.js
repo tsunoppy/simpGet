@@ -913,55 +913,6 @@ function Projects(){
     result += "<h1> Projects </h2>";
     result += "<hr>";
 
-    ////////////////////////////////////////////////////////////////////////
-    result += "<h2> SimpGet </h2>";
-
-
-    result += "<p>";
-    result += " SimpGet can get the result of the simple calculation for the verification of the design.";
-    result += "</p>";
-    result += "<p>";
-    result += " Pls, check the online demo.";
-    result += " GUI application also can be downloaded. Saving data function would be added";
-    result += "</p>";
-    result += "<p>";
-
-    result += " For other countries, under construction...";
-    result += "</p>";
-
-    result += "<img src=\"image/simpGet.png\" width=\"50%\">";
-
-    result += "<br>";
-
-    //-- Download Btn --
-    result += "<tr><td>";
-
-    result += "</td><td>";
-    result += 'SimpGetRC, TIS(Thailand) Material: &nbsp;';
-    result += "</td><td>";
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
-    result += '<button>Windows</button>';
-    result += '</a> &nbsp;';
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
-    result += '<button>Mac</button>';
-    result += '</a> &nbsp;';
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
-    result += '<button>Linux</button>';
-    result += '</a> &nbsp;';
-
-    result += "</td>";
-    result += "</tr>";
-    //-- Download Btn -- End
-
-    result += "<p>";
-    result += "Version 1.0: 2017/09, ";
-    result += "Coded by Javascript + CSS + HTML on nwjs";
-    result += "</p>";
-
-    result += "<hr>";
 
     ////////////////////////////////////////////////////////////////////////
     result += "<h2> MnGen </h2>";
@@ -970,11 +921,17 @@ function Projects(){
     result += " MnGen makes M-N interaction diagram for the RC column based on ACI.";
     result += "</p>";
 
+    /////////////////////
     result += "<p>";
     result += "<h3>Feature</h3>";
+    result += "</p>";
 
-
+    result += "<p>";
     result += "<ul>";
+
+    result += "<li>";
+    result += 'M-N diagram based on ACI';
+    result += "</li>";
 
     result += "<li>";
     result += 'Material';
@@ -989,7 +946,7 @@ function Projects(){
     result += "</li></ul>";
 
     result += "</li><li>";
-    result += 'Based on ACI, SDM and WSDM is available';
+    result += 'SDM and WSDM is available';
 
     result += "</li><li>";
     result += 'Bi-Axial Strength can be evaluated, only SDM';
@@ -999,6 +956,8 @@ function Projects(){
     result += "</ul>";
 
     result += "</p>";
+
+    /////////////////////////////////////////////
 
     result += "<img src=\"image/MnGen_ScreenShot.png\" width=\"50%\">";
 
@@ -1010,7 +969,7 @@ function Projects(){
     result += 'Download: &nbsp;';
     result += "</td><td>";
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/simpThai/dist/simpthai/win64/simpthai.exe" download="simpthai.exe">';
     result += '<button>Windows</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
@@ -1024,6 +983,7 @@ function Projects(){
 
     result += "</td>";
     result += "</tr>";
+    
     //-- Download Btn -- End
 
     result += "<p>";
@@ -1040,6 +1000,29 @@ function Projects(){
     result += "<p>";
     result += " MoveLoad calculates the maximamu stress on the single beam due to the moving load, such as crane girder";
     result += "</p>";
+
+
+    /////////////////////
+    result += "<p>";
+    result += "<h3>Feature</h3>";
+    result += "</p>";
+
+    result += "<p>";
+    result += "<ul>";
+
+    result += "<li>";
+    result += 'Stress diagram and deflection of the simple beam';
+    result += "</li>";
+
+    result += "<li>";
+    result += 'Moving load like crane wheel loads';
+    result += "</li>";
+
+    result += "</ul>";
+
+    result += "</p>";
+
+    /////////////////////////////////////////////
 
     result += "<img src=\"image/MoveLoad.png\" width=\"50%\">";
     result += "<br>";
@@ -1075,12 +1058,109 @@ function Projects(){
     ////////////////////////////////////////////////////////////////////////
 
     ////////////////////////////////////////////////////////////////////////
+    result += "<h2> SimpThai </h2>";
+
+
+    result += "<p>";
+    result += " SimpGet can get the result of the simple calculation for the verification of the design.";
+    result += "</p>";
+
+    /////////////////////
+    result += "<p>";
+    result += "<h3>Feature</h3>";
+    result += "</p>";
+
+    result += "<p>";
+    result += "<ul>";
+
+    result += "<li>";
+    result += 'Capable of getting simple calculation result';
+    result += "</li>";
+
+    result += "<li>";
+    result += 'Material';
+    result += "</li>";
+
+    result += "<ul><li>";
+    result += 'TIS/Thailand, only';
+    result += "</li></ul>";
+
+    result += "</li><li>";
+    result += 'RC, Steel, Foundation, Pile/ Pls, check demo';
+
+    result += "</li><li>";
+    result += 'GUI include saving data function';
+
+
+    result += "</li>";
+    result += "</ul>";
+
+    result += "</p>";
+
+    /////////////////////////////////////////////
+    result += "<img src=\"image/simpGet.png\" width=\"50%\">";
+
+    result += "<br>";
+
+    //-- Download Btn --
+    result += "<tr><td>";
+
+    result += "</td><td>";
+    result += 'SimpGetRC, TIS(Thailand) Material: &nbsp;';
+    result += "</td><td>";
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Windows</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Mac</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a onclick=underCon() target="_blank">';
+    result += '<button>Linux</button>';
+    result += '</a> &nbsp;';
+
+    result += "</td>";
+    result += "</tr>";
+    //-- Download Btn -- End
+
+    result += "<p>";
+    result += "Version 1.0: 2017/09, ";
+    result += "Coded by Javascript + CSS + HTML on nwjs";
+    result += "</p>";
+
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
     result += "<h2> SSet</h2>";
 
     result += "<p>";
     result += " You can get the immediate soil settlmenet and consolidation settlement";
     result += "</p>";
 
+
+    /////////////////////
+    result += "<p>";
+    result += "<h3>Feature</h3>";
+    result += "</p>";
+
+    result += "<p>";
+    result += "<ul>";
+
+    result += "<li>";
+    result += 'Consolidation soil settlement';
+    result += "</li>";
+
+    result += "<li>";
+    result += 'Immediate soil settlement';
+    result += "</li>";
+
+    result += "</ul>";
+
+    result += "</p>";
+
+    /////////////////////////////////////////////
 
     result += "<img src=\"image/SSet.png\" width=\"50%\">";
 
