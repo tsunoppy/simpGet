@@ -11,8 +11,8 @@ function homeback(){
 
     ////////////////////////////////////////////////////////////////////////
     result += "<p>";
-    result += " This is the web site which introduce the structural engineering software for getting simple calculation result.";
-    result += " It's designed by assuming the person who has enough design ability to understand each formula meaning and to use on basic design stage for the double check with hand-cal result.";
+    result += " This is the web site which introduces the structural engineering software for getting simple calculation results.";
+    result += " It's designed by assuming the person who has enough design ability to understand engineering formula and to use on basic design stage for the double check with hand-cal result. You can use it for free.";
     result += "</p><p>";
     result += " Let's the design begin. ^v^!";
     result += "</p>";
@@ -21,6 +21,11 @@ function homeback(){
     result += "<hr>";
 
     result += "<h2>Log</h2>";
+
+    result += "<p>";
+    result += "Site lives: 2020/10/19, Added DownLoad.";
+    result += "</p>";
+    result += "<hr>";
 
     result += "<p>";
     result += "Upload: 2020/10/08, Added Demo.";
@@ -43,19 +48,14 @@ function aboutUs(){
     result += "<hr>";
 
     result += "<p>";
-    result += " My name is Tsunoda working in Tokyo, Japan as the structural engineer.";
+    result += " My name is Tsunoppy, working in Tokyo, Japan as the structural engineer.";
     result += "</p>";
     result += "<p>";
     result += " I love developing softwares related to the civil engineering.";
-    result += "</p>";
-    result += "<p>";
-    result += " Softwares in this site were coded for my private use.";
-    result += " So, you can use it for free.";
+    result += " Softwares on this site were coded for my private use.";
     result += "</p><p>";
     result += "Contact would be much appreciated, if any.";
-    result += "</p><p>";
-    result += "<p>";
-    result += " For civil engingeers all over the world!!";
+    result += " For civil engineers all over the world!!";
     result += "</p>";
 
     result += "<hr>";
@@ -69,14 +69,11 @@ function aboutUs(){
 
     result += "<p>";
     result += "Email:";
-    result += '<a  href="mailto:tsunodat04@gmail.com" target="_top">';
-    result += "tsunodat04@gmail.com;";
+    result += '<a  href="mailto:tsunoppysimple@gmail.com" target="_top">';
+    result += "tsunoppysimple@gmail.com;";
     result += "</a>";
     result += "</p>";
 
-    result += "<p>";
-    result += "Licence: Structural Design 1st Class Architect(Jp)";
-    result += "</p>";
 
     document.getElementById('home').innerHTML = result;
 }
@@ -961,7 +958,7 @@ function Projects(){
 
     /////////////////////////////////////////////
 
-    result += "<img src=\"image/MnGen_ScreenShot.png\" width=\"50%\">";
+    result += "<img src=\"image/MnGen_ScreenShot.png\" width=\"350px\">";
 
     result += "<br>";
 
@@ -971,15 +968,15 @@ function Projects(){
     result += 'Download: &nbsp;';
     result += "</td><td>";
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://github.com/tsunoppy/simpThai/dist/simpthai/win64/simpthai.exe" download="simpthai.exe">';
+    result += '<a href="https://drive.google.com/uc?id=1EWtIe_bhc8mHJgKISMjTp_wokUOJ7ttS" target="_blank">';
     result += '<button>Windows</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://github.com/tsunoppy/simpThai/pack/simpthai" download="simpthai">';
+    result += '<a href="https://drive.google.com/uc?id=12ZpPgNj7DC6e00RWzmN8_vGvr99H_WHJ" target="_blank">';
     result += '<button>Mac</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
+    result += '<a href="https://drive.google.com/uc?id=10YRLUu-eatSWavKxS4d-NItxKR__9gSq" target="_blank">';
     result += '<button>Linux</button>';
     result += '</a> &nbsp;';
 
@@ -1026,7 +1023,7 @@ function Projects(){
 
     /////////////////////////////////////////////
 
-    result += "<img src=\"image/MoveLoad.png\" width=\"50%\">";
+    result += "<img src=\"image/MoveLoad.png\" width=\"350px\">";
     result += "<br>";
 
     //-- Download Btn --
@@ -1035,15 +1032,16 @@ function Projects(){
     result += 'Download: &nbsp;';
     result += "</td><td>";
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
+    result += '<a href="https://drive.google.com/uc?id=1BXrWResGgcFPkQxiOgKkhT6rLeqonDgB" target="_blank">';
     result += '<button>Windows</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
+    result += '<a href="https://drive.google.com/uc?id=1TORS99OaQH7IAIj42TNdSjZgOpovxcXw" target="_blank">';
     result += '<button>Mac</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a onclick=underCon() target="_blank">';
+    result += '<a href=https://drive.google.com/uc?id=17hWX-Q1wgXNrFSENYhZjP_G4xtc9qJYC" target="_blank">';
+
     result += '<button>Linux</button>';
     result += '</a> &nbsp;';
 
@@ -1100,20 +1098,28 @@ function Projects(){
     result += "</p>";
 
     /////////////////////////////////////////////
-    result += "<img src=\"image/simpGet.png\" width=\"50%\">";
+    result += "<img src=\"image/simpGet.png\" width=\"350px\">";
 
     result += "<br>";
 
     //-- Download Btn --
     result += "<tr><td>";
-
     result += "</td><td>";
-    result += 'simpThai: &nbsp;';
+    result += 'Download: &nbsp;';
     result += "</td><td>";
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://drive.google.com/uc?id=15wi5LZsJuqdUheOvvBytaY-cKRW_3Ddz" target="_blank">';
+    result += '<button>Windows</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://drive.google.com/uc?id=1KTVidZWBPsasmFLSGK-bIXdnndCvrb2t" target="_blank">';
+    result += '<button>Mac</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://drive.google.com/uc?id=17hWX-Q1wgXNrFSENYhZjP_G4xtc9qJYC&export=download" target="_blank">';
 
-    result += '<a class="linkFont" href="https://github.com/tsunoppy/simpThai" target="_blank">';
-    result += "Github";
-    result += "</a>";
+    result += '<button>Linux</button>';
+    result += '</a> &nbsp;';
 
     result += "</td>";
     result += "</tr>";
@@ -1156,7 +1162,7 @@ function Projects(){
 
     /////////////////////////////////////////////
 
-    result += "<img src=\"image/SSet.png\" width=\"50%\">";
+    result += "<img src=\"image/SSet.png\" width=\"350px\">";
 
     result += "<p>";
     result += "<h3> Under Construction.... </h3>";
