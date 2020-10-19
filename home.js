@@ -1040,7 +1040,7 @@ function Projects(){
     result += '<button>Mac</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href=https://drive.google.com/uc?id=17hWX-Q1wgXNrFSENYhZjP_G4xtc9qJYC" target="_blank">';
+    result += '<a href="https://drive.google.com/uc?id=17hWX-Q1wgXNrFSENYhZjP_G4xtc9qJYC" target="_blank">';
 
     result += '<button>Linux</button>';
     result += '</a> &nbsp;';
