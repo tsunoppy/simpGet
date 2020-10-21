@@ -23,17 +23,22 @@ function homeback(){
     result += "<h2>Log</h2>";
 
     result += "<p>";
-    result += "Site lives: 2020/10/19, Added DownLoad.";
+    result += "2020/10/21, Added DownLoad.";
     result += "</p>";
     result += "<hr>";
 
     result += "<p>";
-    result += "Upload: 2020/10/08, Added Demo.";
+    result += "2020/10/19, Added DownLoad.";
     result += "</p>";
     result += "<hr>";
 
     result += "<p>";
-    result += "Upload: 2020/10/04, Test";
+    result += "2020/10/08, Added Demo.";
+    result += "</p>";
+    result += "<hr>";
+
+    result += "<p>";
+    result += "2020/10/04, Test";
     result += "</p>";
     result += "<hr>";
 
@@ -968,7 +973,7 @@ function Projects(){
     result += 'Download: &nbsp;';
     result += "</td><td>";
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://github.com/tsunoppy/simpThai/releases/download/v1.0/simpthai_win64_pack.zip">';
+    result += '<a href="https://github.com/tsunoppy/MnGen/releases/download/v1.0/mngen_win64_pack.zip">';
     result += '<button>Windows</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
@@ -1026,28 +1031,10 @@ function Projects(){
     result += "<img src=\"image/MoveLoad.png\" width=\"350px\">";
     result += "<br>";
 
-    //-- Download Btn --
-    result += "<tr><td>";
-    result += "</td><td>";
-    result += 'Download: &nbsp;';
-    result += "</td><td>";
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://github.com/tsunoppy/simpThai/releases/download/v1.0/simpthai_win64_pack.zip">';
-    result += '<button>Windows</button>';
-    result += '</a> &nbsp;';
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://github.com/tsunoppy/MoveLoad.git" target="_blank">';
-    result += '<button>Mac</button>';
-    result += '</a> &nbsp;';
-    //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://github.com/tsunoppy/MoveLoad.git" target="_blank">';
-    result += '<button>Linux</button>';
-    result += '</a> &nbsp;';
+    result += "<p>";
+    result += "<h3> Under Construction.... </h3>";
+    result += "</p>";
 
-    result += "</td>";
-    result += "</tr>";
-
-    //-- Download Btn -- End
 
     result += "<p>";
     result += "Version 1.0: 2018/09, ";
