@@ -941,7 +941,7 @@ function Projects(){
     result += "</li><li>";
     result += 'TIS/Thailand;';
     result += "</li><li>";
-    result += 'GB/Chaina;';
+    result += 'GB/China;';
     result += "</li></ul>";
 
     result += "</li><li>";
@@ -968,15 +968,15 @@ function Projects(){
     result += 'Download: &nbsp;';
     result += "</td><td>";
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=1EWtIe_bhc8mHJgKISMjTp_wokUOJ7ttS" target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/simpThai/releases/download/v1.0/simpthai_win64_pack.zip">';
     result += '<button>Windows</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=12ZpPgNj7DC6e00RWzmN8_vGvr99H_WHJ" target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/MnGen.git" target="_blank">';
     result += '<button>Mac</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=10YRLUu-eatSWavKxS4d-NItxKR__9gSq" target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/MnGen.git" target="_blank">';
     result += '<button>Linux</button>';
     result += '</a> &nbsp;';
 
@@ -1032,21 +1032,21 @@ function Projects(){
     result += 'Download: &nbsp;';
     result += "</td><td>";
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=1BXrWResGgcFPkQxiOgKkhT6rLeqonDgB" target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/simpThai/releases/download/v1.0/simpthai_win64_pack.zip">';
     result += '<button>Windows</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=1TORS99OaQH7IAIj42TNdSjZgOpovxcXw" target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/MoveLoad.git" target="_blank">';
     result += '<button>Mac</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=17hWX-Q1wgXNrFSENYhZjP_G4xtc9qJYC" target="_blank">';
-
+    result += '<a href="https://github.com/tsunoppy/MoveLoad.git" target="_blank">';
     result += '<button>Linux</button>';
     result += '</a> &nbsp;';
 
     result += "</td>";
     result += "</tr>";
+
     //-- Download Btn -- End
 
     result += "<p>";
@@ -1108,21 +1108,21 @@ function Projects(){
     result += 'Download: &nbsp;';
     result += "</td><td>";
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=15wi5LZsJuqdUheOvvBytaY-cKRW_3Ddz" target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/simpThai/releases/download/v1.0/simpthai_win64_pack.zip">';
     result += '<button>Windows</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=1KTVidZWBPsasmFLSGK-bIXdnndCvrb2t" target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/simpThai.git" target="_blank">';
     result += '<button>Mac</button>';
     result += '</a> &nbsp;';
     //result += '<a href="#" onclick=underCon() target="_blank">';
-    result += '<a href="https://drive.google.com/uc?id=17hWX-Q1wgXNrFSENYhZjP_G4xtc9qJYC&export=download" target="_blank">';
-
+    result += '<a href="https://github.com/tsunoppy/simpThai.git" target="_blank">';
     result += '<button>Linux</button>';
     result += '</a> &nbsp;';
 
     result += "</td>";
     result += "</tr>";
+
     //-- Download Btn -- End
 
     result += "<p>";
