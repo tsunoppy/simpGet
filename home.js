@@ -23,12 +23,12 @@ function homeback(){
     result += "<h2>Log</h2>";
 
     result += "<p>";
-    result += "2020/10/21, Added DownLoad.";
+    result += "2020/10/22, Added MoveLoad.";
     result += "</p>";
     result += "<hr>";
 
     result += "<p>";
-    result += "2020/10/19, Added DownLoad.";
+    result += "2020/10/21, Added DownLoad.";
     result += "</p>";
     result += "<hr>";
 
@@ -59,8 +59,8 @@ function aboutUs(){
     result += " I love developing softwares related to the civil engineering.";
     result += " Softwares on this site were coded for my private use.";
     result += "</p><p>";
-    result += "Contact would be much appreciated, if any.";
-    result += " For civil engineers all over the world!!";
+    result += " Contact would be much appreciated, if any.";
+    result += " For structural engineers all over the world!!";
     result += "</p>";
 
     result += "<hr>";
@@ -1031,10 +1031,28 @@ function Projects(){
     result += "<img src=\"image/MoveLoad.png\" width=\"350px\">";
     result += "<br>";
 
-    result += "<p>";
-    result += "<h3> Under Construction.... </h3>";
-    result += "</p>";
+    //-- Download Btn --
+    result += "<tr><td>";
+    result += "</td><td>";
+    result += 'Download: &nbsp;';
+    result += "</td><td>";
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/MoveLoad/releases/download/v1.0/moveload_win64_pack.zip">';
+    result += '<button>Windows</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/MoveLoad.git" target="_blank">';
+    result += '<button>Mac</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/MoveLoad.git" target="_blank">';
+    result += '<button>Linux</button>';
+    result += '</a> &nbsp;';
 
+    result += "</td>";
+    result += "</tr>";
+
+    //-- Download Btn -- End
 
     result += "<p>";
     result += "Version 1.0: 2018/09, ";
