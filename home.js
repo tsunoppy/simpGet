@@ -23,6 +23,11 @@ function homeback(){
     result += "<h2>Log</h2>";
 
     result += "<p>";
+    result += "2020/11, Added rigidWink.";
+    result += "</p>";
+    result += "<hr>";
+
+    result += "<p>";
     result += "2020/10/22, Added MoveLoad.";
     result += "</p>";
     result += "<hr>";
