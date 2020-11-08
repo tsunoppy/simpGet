@@ -919,6 +919,50 @@ function Projects(){
 
 
     ////////////////////////////////////////////////////////////////////////
+    result += '<a href="https://github.com/tsunoppy/rigidWink.git" target="_blank">';
+    result += "<h2> rigidWink </h2>";
+    result += "</a>";
+
+    result += "<p>";
+    result += " rigidWink can solve uplift analysis of the winkler model, assuming rigid plate";
+    result += "</p>";
+
+    /////////////////////
+    result += "<p>";
+    result += "<h3>Feature</h3>";
+    result += "</p>";
+
+    result += "<p>";
+    result += "<ul>";
+
+    result += "<li>";
+    result += 'Uplift Analysis by convergent calculation';
+    result += "</li>";
+
+    result += "<li>";
+    result += 'Rigid Plate Model & Winkler Model';
+    result += "</li>";
+
+    result += "</li>";
+    result += "</ul>";
+
+    result += "</p>";
+
+    /////////////////////////////////////////////
+
+    result += "<img src=\"image/rigidWink.png\" width=\"350px\">";
+
+    result += "<br>";
+
+    result += "<p>";
+    result += "Coded by python3";
+    result += "</p>";
+
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////////////////////////////
     result += "<h2> MnGen </h2>";
 
     result += "<p>";
