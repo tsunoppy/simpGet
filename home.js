@@ -152,7 +152,7 @@ function general(){
     result += "</tr>";
     //////////////////////////////////////////////////
 
-    result += "</tr></table>";
+    result += "</tr></table>"; 
     result += "<hr>";
     result += "<h3> Wind Load </h3>";
     result += "<table>";
@@ -959,11 +959,34 @@ function Projects(){
 
     result += "<br>";
 
+    //-- Download Btn --
+    result += "<tr><td>";
+    result += "</td><td>";
+    result += 'Download: &nbsp;';
+    result += "</td><td>";
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/rigidWink/releases/download/v1.0/rigidWink_win.zip">';
+    result += '<button>Windows</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/rigidWink.git" target="_blank">';
+    result += '<button>Mac</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/rigidWink.git" target="_blank">';
+    result += '<button>Linux</button>';
+    result += '</a> &nbsp;';
+
+    result += "</td>";
+    result += "</tr>";
+
     result += "<p>";
     result += "Coded by python3";
     result += "</p>";
 
     result += "<hr>";
+
+
 
     ////////////////////////////////////////////////////////////////////////
 
