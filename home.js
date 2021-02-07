@@ -23,6 +23,11 @@ function homeback(){
     result += "<h2>Log</h2>";
 
     result += "<p>";
+    result += "2021/02, Added twoWaySlab.";
+    result += "</p>";
+    result += "<hr>";
+
+    result += "<p>";
     result += "2020/11, Added rigidWink.";
     result += "</p>";
     result += "<hr>";
@@ -817,8 +822,82 @@ function rc(){
 function Ref() {
     var result = "";
     result += '<h1>';
-    result += 'Under Construction....';
+    result += 'Under Development...';
     result += '</h1>';
+
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
+    result += '<a href="https://github.com/tsunoppy/twoWaySlab.git" target="_blank">';
+    result += "<h2> twoWaySlab </h2>";
+    result += "</a>";
+
+    result += "<p>";
+    result += " Design of the two way slab";
+    result += "</p>";
+
+    /////////////////////
+    result += "<p>";
+    result += "<h3>Feature</h3>";
+    result += "</p>";
+
+    result += "<p>";
+    result += "<ul>";
+
+    result += "<li>";
+    result += 'Follow Japanese Code';
+    result += "</li>";
+
+    result += "<li>";
+    result += 'Calculate deflection and stress of the two way RC slab';
+    result += "</li>";
+
+    result += "<li>";
+    result += 'Solve plate eq. directly by Fourier Method.';
+    result += "</li>";
+    
+    result += "<li>";
+    result += 'Import/Export by csv format.';
+    result += "</li>";
+    
+    result += "<li>";
+    result += 'Export pdf file report.';
+    result += "</li>";
+
+    result += "</ul>";
+
+    result += "</p>";
+
+    /////////////////////////////////////////////
+
+    result += "<img src=\"image/twoWaySlab.png\" width=\"350px\">";
+
+    result += "<br>";
+
+    //-- Download Btn --
+    result += "<tr><td>";
+    result += "</td><td>";
+    result += 'Download: &nbsp;';
+    result += "</td><td>";
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/twoWaySlab/releases/download/v1.0/twoWaySlab_win.zip">';
+    result += '<button>Windows</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/twoWaySlab.git" target="_blank">';
+    result += '<button>Mac</button>';
+    result += '</a> &nbsp;';
+    //result += '<a href="#" onclick=underCon() target="_blank">';
+    result += '<a href="https://github.com/tsunoppy/twoWaySlab.git" target="_blank">';
+    result += '<button>Linux</button>';
+    result += '</a> &nbsp;';
+
+    result += "</td>";
+    result += "</tr>";
+
+    result += "<p>";
+    result += "Coded by python3";
+    result += "</p>";
 
     result += "<hr>";
 
