@@ -972,6 +972,59 @@ function Projects(){
     result += "<hr>";
 
     ////////////////////////////////////////////////////////////////////////
+    result += '<a href="https://github.com/tsunoppy/stiffSt.git" target="_blank">';
+    result += "<h2> Stiffner </h2>";
+    result += "</a>";
+
+    result += "<p>";
+    result += " Design of steel joint for the stiffner";
+    result += "</p>";
+
+    /////////////////////
+    result += "<p>";
+    result += "<h3>Feature</h3>";
+    result += "</p>";
+
+    result += "<p>";
+    result += "<ul>";
+
+    result += "<li>";
+    result += 'Follow Japanese Code';
+    result += "</li>";
+
+    result += "<li>";
+    result += 'Calculate by Building letter';
+    result += "</li>";
+
+    result += "<li>";
+    result += 'Compute HTB shear force';
+    result += "</li>";
+    
+    result += "<li>";
+    result += 'Import/Export by csv format.';
+    result += "</li>";
+    
+    result += "<li>";
+    result += 'Export pdf file report.';
+    result += "</li>";
+
+    result += "</ul>";
+
+    result += "</p>";
+
+    /////////////////////////////////////////////
+
+    result += "<img src=\"image/Stiff.png\" width=\"350px\">";
+
+    result += "<br>";
+
+    result += "<p>";
+    result += "Coded by python3";
+    result += "</p>";
+
+    result += "<hr>";
+    
+    ////////////////////////////////////////////////////////////////////////
     result += '<a href="https://github.com/tsunoppy/twoWaySlab.git" target="_blank">';
     result += "<h2> twoWaySlab </h2>";
     result += "</a>";
@@ -1044,7 +1097,7 @@ function Projects(){
     result += "</p>";
 
     result += "<hr>";
-    
+
     ////////////////////////////////////////////////////////////////////////
     result += '<a href="https://github.com/tsunoppy/rigidWink.git" target="_blank">';
     result += "<h2> rigidWink </h2>";
