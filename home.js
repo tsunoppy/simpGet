@@ -972,6 +972,17 @@ function Projects(){
     result += "<hr>";
 
     ////////////////////////////////////////////////////////////////////////
+    result += '<a href="https://github.com/tsunoppy/efm.git" target="_blank">';
+    result += "<h2> efm </h2>";
+    result += "</a>";
+
+    result += "<p>";
+    result += " Equivalent Frame analysis";
+    result += "</p>";
+
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
     result += '<a href="https://github.com/tsunoppy/stiffSt.git" target="_blank">';
     result += "<h2> Stiffner </h2>";
     result += "</a>";
