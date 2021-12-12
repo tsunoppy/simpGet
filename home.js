@@ -23,6 +23,11 @@ function homeback(){
     result += "<h2>Log</h2>";
 
     result += "<p>";
+    result += "2021/12, Added fibGet.";
+    result += "</p>";
+    result += "<hr>";
+
+    result += "<p>";
     result += "2021/02, Added twoWaySlab.";
     result += "</p>";
     result += "<hr>";
@@ -969,6 +974,19 @@ function Projects(){
 
     var result = "";
     result += "<h1> Projects </h2>";
+    result += "<hr>";
+
+    ////////////////////////////////////////////////////////////////////////
+    result += '<a href="https://github.com/tsunoppy/fibGet.git" target="_blank">';
+    result += "<h2> fibGet </h2>";
+    result += "</a>";
+
+    result += "<p>";
+    result += " 1-D fiber analyisi for the reinforced concrete section";
+    result += "</p>";
+
+    result += "<img src=\"image/fibGet.png\" width=\"350px\">";
+
     result += "<hr>";
 
     ////////////////////////////////////////////////////////////////////////
